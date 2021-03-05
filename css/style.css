@@ -1,0 +1,275 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/*promo*/
+
+.promo {
+    width: 100vw;
+}
+
+.Video {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    right: 10%;
+    left: 10%;
+}
+
+.product-title,
+.time {
+    display: flex;
+    justify-content: center;
+    font-size: 62px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produc-phot img {
+    width: 100%;
+    height: 100%;
+}
+
+.produc-phot {
+    width: 12vw;
+}
+
+.produc-option {
+    width: 20%;
+}
+
+.produc-option ul li {
+    font-size: 15px;
+    margin: 2% 0;
+}
+
+.produc-option ul {
+    margin: 2% 0;
+}
+
+.buttom {
+    border: 2px solid gray;
+    border-radius: 40%;
+    padding: 2% 4%;
+    color: green;
+    margin: 2% 0;
+    background: white;
+}
+
+.buttom:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+/*promo\*/
+
+
+/*composit*/
+
+.product-compos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(183, 183, 194, 1) 0%, rgba(112, 112, 112, 1) 53%, rgba(255, 255, 255, 1) 100%);
+}
+
+.compos {
+    font-size: 15px;
+    margin: 5% 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compos img {
+    width: 10%;
+    border: 1px solid gray;
+    border-radius: 30%;
+    margin: 0 2%;
+}
+
+
+/*composit\*/
+
+
+/*review*/
+
+
+/*стили карусели*/
+
+.owl-carousel {
+    background: grey;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.carousel-item {
+    margin: auto;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.slaider-img img {
+    width: 30%;
+    height: 150%;
+    border-radius: 50%;
+    background: white;
+    color: #69d2e7;
+}
+
+.slaider-text {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Контейнер с маркерами */
+
+.owl-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Сам маркер*/
+
+.owl-carousel button.owl-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    margin: 0 3px;
+}
+
+
+/* Активный маркер */
+
+.owl-carousel button.owl-dot.active {
+    background: #69d2e7;
+}
+
+.js-prev,
+.js-next {
+    width: 10%;
+    height: 10%;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*review\*/
+
+
+/*promo due*/
+
+.due {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.revis {
+    display: flex;
+    justify-content: space-around;
+}
+
+.due .produc-option {
+    width: 80%;
+}
+
+.due .produc-option ol {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+/*promo due\*/
+
+
+/*form-order*/
+
+.blok {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-order {
+    background: linear-gradient(90deg, rgba(183, 183, 194, 1) 0%, rgba(112, 112, 112, 1) 53%, rgba(255, 255, 255, 1) 100%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin: 2% 0;
+    width: 20vw;
+    height: 5vh;
+    font-size: 20px;
+}
+
+.prices-old,
+.prices-new {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+@keyframes span-1 {
+    0% {
+        transform: scale(1.4);
+    }
+    50% {
+        transform: scale(1.6);
+        border-color: #EE4D68
+    }
+}
+
+.prices-new {
+    animation: span-1 2s infinite;
+}
+
+
+/*form-order\*/
+
+@media screen and (max-width: 1015px) {
+    .content {
+        top: 5%;
+    }
+    form input {
+        width: 60vw;
+    }
+    .revis {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .product-title,
+    .time {
+        font-size: 40px;
+    }
+    .produc-option {
+        width: 60%;
+    }
+}
